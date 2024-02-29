@@ -1,0 +1,25 @@
+{
+  "name": "aem-fsi-template",
+  "version": "1.0.0",
+  "description": "FSI Template",
+  "license": "MIT License, Copyright 2020 Adobe Systems Incorporated",
+  "scripts": {
+    "build": "aem-site-template-builder",
+    "stub": "aem-site-template-builder stub",
+    "deploy": "curl -u admin:admin -F file=@aem-fsi-template-latest.zip http://localhost:4502/bin/wcm/site-template/import"
+  },
+  "devDependencies": {
+    "@adobe/aem-site-template-builder": "2.3.1"
+  },
+  "siteTemplate": {
+    "title": "Standard AEM Site Template",
+    "createdBy": "Adobe",
+    "useCases": [
+      "General purpose sites, corporate marketing sites, landing pages, blog sites, content marketing"
+    ],
+    "docsUrl": "",
+    "showcaseUrl": "",
+    "sourceRepositoryUrl": "https://github.com/adobe/aem-fsi-template",
+    "openItem": "{Path}/en/home"
+  }
+}
